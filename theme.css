@@ -90,7 +90,7 @@ a:hover {
   h1 {
     color: black;
     font-weight: 400;
-    font-size: 8vw;
+    font-size: 10vw;
   }
 
   .project {
@@ -114,7 +114,7 @@ a:hover {
   h1 {
     color: black;
     font-weight: 400;
-    font-size: 6vw;
+    font-size: 10vw;
   }
 
   .project {
@@ -170,7 +170,7 @@ a:hover {
   }
 
   .up {
-    height: 40%;
+    height: 70%;
     width: 100%;
     top: 0;
   }
@@ -189,7 +189,6 @@ a:hover {
   }
 
   .right {
-    background-color: black;
     position: absolute;
     height: 100%;
     width: 50%;
