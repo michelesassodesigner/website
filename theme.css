@@ -1,0 +1,221 @@
+@font-face {
+  font-family: 'Inter', sans-serif;
+  src: url('Inter-VariableFont_slnt,wght');
+}
+
+body {
+  overflow-x: hidden;
+  font-family: 'Inter', sans-serif;
+  background-color: #f2f2f2;
+  cursor: default;
+  display: flex;
+  flex-direction: column;
+}
+
+h1 {
+  padding-top: 1vw;
+  animation-name: up;
+  animation-duration: 0.5s;
+  animation-fill-mode: forwards;
+  animation-timing-function: ease-in;
+}
+
+.project, .text {
+  font-variant: small-caps;
+}
+
+#title, #title2 {
+  font-variant: small-caps;
+  opacity: 0;
+  animation-name: up;
+  animation-duration: 0.5s;
+  animation-fill-mode: forwards;
+  animation-timing-function: ease-in;
+  animation-delay: 0.2s;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+  cursor: none;
+}
+
+a:hover {
+  text-decoration: none;
+  cursor: none;
+  color: black;
+}
+
+.footer {
+  position: fixed;
+  bottom: 12;
+  height: 5%;
+  right: 0;
+}
+
+.line {
+  width: 110%;
+  border-bottom: 0.5px solid black;
+  margin-left: -10px;
+  margin-right: -10px;
+  position: relative;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+#scriptcanva {
+  position: absolute;
+  z-index: -100;
+  display: block;
+  /*background-color: black;*/
+  margin: -10;
+  overflow: hidden;
+}
+
+@keyframes up {
+  0% {
+    padding-top: 2vw;
+    opacity: 0;
+  }
+
+  100% {
+    padding-bottom: 1vw;
+    opacity: 1;
+  }
+}
+
+/*BREAKPOINT*/
+/* Mobile */
+@media only screen and (max-width: 672px) {
+  h1 {
+    color: black;
+    font-weight: 400;
+    font-size: 8vw;
+  }
+
+  .project {
+    color: black;
+    font-weight: 600;
+    font-size: 3.3vw;
+    padding-left: 2vw;
+  }
+
+  .line {
+    border-bottom: 1.5px solid black;
+  }
+
+  #title, #title2, #title3 {
+    font-size: 8vw;
+  }
+}
+
+/* Tablets */
+@media only screen and (min-width: 672px) {
+  h1 {
+    color: black;
+    font-weight: 400;
+    font-size: 6vw;
+  }
+
+  .project {
+    color: black;
+    font-weight: 600;
+    font-size: 3.3vw;
+    padding-left: 2vw;
+  }
+
+  .line {
+    border-bottom: 1.5px solid black;
+  }
+
+  #title, #title2, #title3 {
+    font-size: 8vw;
+  }
+}
+
+/* Small screens */
+@media only screen and (min-width: 990px) {
+  h1 {
+    color: black;
+    font-weight: 400;
+    font-size: 5vw;
+  }
+
+  .project {
+    color: black;
+    font-weight: 600;
+    font-size: 2.5vw;
+    padding-left: 2vw;
+  }
+
+  .line {
+    border-bottom: 0.7px solid black;
+  }
+
+  #title, #title2, #title3 {
+    font-size: 4vw;
+  }
+}
+
+/* Large screen devices */
+@media only screen and (min-width: 1200px) {
+  h1 {
+    color: black;
+    font-weight: 400;
+    font-size: 4vw;
+  }
+
+  .split {
+    position: relative;
+  }
+
+  .up {
+    height: 40%;
+    width: 100%;
+    top: 0;
+  }
+
+  .down {
+    height: 50%;
+    width: 100%;
+    margin-bottom: 0;
+  }
+
+  .left {
+    position: absolute;
+    height: 100%;
+    width: 50%;
+    left: 0;
+  }
+
+  .right {
+    background-color: black;
+    position: absolute;
+    height: 100%;
+    width: 50%;
+    right: 0;
+  }
+
+  .text {
+    color: black;
+    font-weight: 400;
+    font-size: 15px;
+    padding-left: 2vw;
+  }
+
+  .project {
+    color: black;
+    font-weight: 600;
+    font-size: 20px;
+    padding-left: 2vw;
+  }
+
+  .headup {
+    position: absolute;
+    right: 0;
+  }
+
+  #title, #title2, #title3 {
+    font-size: 3vw;
+  }
+}
